@@ -66,8 +66,8 @@ def get_random_address():
     enriched_address = {
         "StreetAddress": raw_address.get("address1"),
         "city": raw_address.get("city"),
-        "state": state_full,
-        "StateFullName": state_abbreviation,
+        "StateFullName": state_full,
+        "state": state_abbreviation,
         "postalCode": raw_address.get("postalCode"),
     }
     return jsonify(enriched_address)
